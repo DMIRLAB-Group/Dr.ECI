@@ -14,13 +14,15 @@ Despite the demonstrated potential of Large Language Models (LLMs) in diverse NL
 
 We employ causal graph theory to systematically summarize explicit and implicit causal structures under the ECI task via Directed Acyclic Graphs (DAGs). Causal patterns within ECI are categorized into direct and indirect causal reasoning.
 
-![img](https://github.com/9yly/ECI2Causal/raw/main/Dr.ECI/image/causal patterns.png)
+![img](image/causal_patterns.png)
+
 
 ### Dr.ECI comprises 4 agents: *Causal Explorer*, *Mediator Detector*, *Direct Reasoner* and *Indirect Reasoner*
 
 *Dr.ECI* is a multi-agent framework designed to enhance causal reasoning in large language models (LLMs) for Event Causality Identification (ECI). It comprises two stages: discovery and reasoning.
 
-![img](https://github.com/9yly/ECI2Causal/raw/main/Dr.ECI/image/methods.png)
+
+![img](image/methods.png)
 
 **Discovery Stage:** Given a context \(C\) and an event pair \((e_s, e_t)\), the *Causal Explorer* identifies potential causal relationships using expressions like \(\mathcal{N} = \{\text{causal relationship}, \text{causation}, \text{causality}\}\). If a causal link is found, the *Mediator Detector* identifies mediators \((E_{st})\) that could act as intermediaries between \(e_s\) and \(e_t\).
 
@@ -30,21 +32,21 @@ We employ causal graph theory to systematically summarize explicit and implicit 
 
 Follow the testing setting proposed by Zhang et al.
 
-![img](https://github.com/9yly/ECI2Causal/raw/main/Dr.ECI/image/zhang1.png)
+![img](image/zhang1.png)
+![img](image/zhang2.png)
 
-![img](https://github.com/9yly/ECI2Causal/raw/main/Dr.ECI/image/zhang2.png)
 
 ---
 
 Adhere to the work of Gao et al. when evaluating its performance on the development set.
 
-![img](https://github.com/9yly/ECI2Causal/raw/main/Dr.ECI/image/gao.png)
+![img](image/gao.png)
 
 ## Analysis
 
 The results presented in the figure below indicate that as the number of causal expressions identified by the *Causal Explorer* increases, the Recall (R) also tends to increase.
 
-![img](https://github.com/9yly/ECI2Causal/raw/main/Dr.ECI/image/Analysis.png)
+![img](image/Analysis.png)
 
 ## How to Run Dr.ECI?
 
